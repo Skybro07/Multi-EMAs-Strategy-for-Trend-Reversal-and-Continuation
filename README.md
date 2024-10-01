@@ -42,24 +42,29 @@ Example of how trade initiates:
 
 Few examples based on the different timeframes:
 
+![image](https://github.com/user-attachments/assets/fe82eb6b-caaa-4fd2-b8d4-57c4e4c8de48)
 
 
 
 AXIS BANK hourly timeframe chart and a significant move of 8.42% after the buy signal candle(Trend continuation)
 
+![image](https://github.com/user-attachments/assets/46f47faa-f732-4104-b324-2ebf2c1863f2)
 
  
 PFC hourly time frame chart and a significant move of 17% after the buy signal candle ( Trend reversal)
+![image](https://github.com/user-attachments/assets/ea02accb-fd71-4bbf-8016-95632aa0ab74)
 
 
 
 Axis bank hourly chart and a significant bullish move after the entry signal candle (Trend reversal)
 
+![image](https://github.com/user-attachments/assets/6ca85282-afae-4cda-bc75-9de601ad0263)
 
  
 
 PFC 30 minutes time frame and a significant move of the 6% after the entry candle
 
+![image](https://github.com/user-attachments/assets/901ca421-949e-486e-8f3f-ee3f33c297bc)
 
 TATA POWER 15-minute time frame chart and an 8.98% upside move after the entry signal candle (Trend reversal)
 
@@ -74,27 +79,24 @@ More sophisticated approaches could also involve the concept of trailing stop lo
 
 Stock selection criteria:
 This strategy works with its full potential on highly liquid stocks actively traded on the exchange. So, selecting some of the most liquid stocks on the NSE based on market cap
-1.	AXIS Bank (Large cap)
- 
-2.	ITC
-3.	ICICI Bank
-4.	Power finance corporation (PFC)
-5.	WIPRO
+1. JINDAL STEEL
+2. TATA MOTORS	
+3.	WIPRO
+4.	AXIS BANK
+5.	ITC
 Implementation of the strategy:
 Coding the strategy in python using the backtrader library CODE- Code
 
 
-Data source- using the trading view as the data source, after downloading the data from the trading view data is stored in a CSV (Comma-Separated Values) file format.
-Using the pd.read_csv for reading the data
-Backtesting period:
-Backtesting the strategy from 1st January 2020 till the present
-The sample period underwent economic events like COVID-19, the Russia-Ukraine Conflict, and the 2020 Farmer Protest. the sample period has also gone through country-specific and global geopolitical events.
+Data source- using the YAHOO FINANCE stock Data by importing its Library.
+Backtesting period: 1st January, 2000 to 1st April  2024.
+
 
 
 Some assumptions during the backtest:
-•	Slippage is negligible.
 •	My strategy first checks if there's an existing order; if there is, it does not execute any new orders.
 •	I am not taking leverage in trades as some of the trades take more than a day, so considering Indian market trades aren’t eligible for leverage
+
 Result format:
 •	Result shows the date when buy executed and sell executed including CMP at that time
 •	Shows the number of trades closed, number of win trades, number of losing trades, number of open trades, and strike rate (Win ratio).
@@ -106,9 +108,6 @@ Conducting a sample run of the strategy on JINDALSTEEL over a one-year lookback 
  
  
 
- 
-Visualizing the results for the bucket of stocks:
-Here is the backtesting result of each stock from 1st January 2020:
 
 
 
