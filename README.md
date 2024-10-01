@@ -84,6 +84,8 @@ This strategy works with its full potential on highly liquid stocks actively tra
 3.	WIPRO
 4.	AXIS BANK
 5.	ITC
+
+
 Implementation of the strategy:
 Coding the strategy in python using the backtrader library CODE- Code
 
